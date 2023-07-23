@@ -1,10 +1,14 @@
 
 import './App.css';
-
+import NavBar from './navbar';
+import Welcome from './Welcome';
+import CurrentKids from './current_kids';
 function App() {
   return (
-    <div className='nav'> 
-    <h1> <i> Chore Website</i></h1>
+    <div className='App'>
+      <NavBar />
+      <Welcome />
+      <CurrentKids />
     </div>
   );
 }
