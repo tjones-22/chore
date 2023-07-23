@@ -1,4 +1,3 @@
-import './App.css';
 
 const Welcome = () => {
 const time = new Date();

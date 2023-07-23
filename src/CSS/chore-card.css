@@ -1,0 +1,33 @@
+.chore-button{
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width:20%;
+    text-align: center;
+}
+.current-kids-div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:auto;
+}
+.buttons-div{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width:50%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left:10px;
+}
+
+.buttons-div > h4{
+    transition: 0.4s;
+}
+.buttons-div > h4:hover{
+    text-decoration: underline;
+    color:gold;
+}
