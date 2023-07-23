@@ -3,7 +3,9 @@ import './App.css';
 
 function App() {
   return (
-    <div className='navs'> </div>
+    <div className='nav'> 
+    <h1> <i> Chore Website</i></h1>
+    </div>
   );
 }
 
