@@ -19,7 +19,7 @@ return (
         <p>{daysOfWeek[weekday]} the {dayNum}</p>
         <div className="premise">
             <p id="top"> I made this because people kept moving people in the wrong places. This will move chores automatically so that it stays in order.</p>
-            <p id='bottom'> Remmeber to do your chores evemn if you leave for the day 😁</p>
+            <p id='bottom'> Remmeber to do your chores even if you leave for the day 😁</p>
         </div>
     </div>
 );
