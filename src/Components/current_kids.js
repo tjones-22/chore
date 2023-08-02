@@ -11,6 +11,30 @@ const CurrentKids = () => {
         {id:4,name:'Tyson'},
         {id:5,name:'Brockton'}
     ]);
+
+let currentDay = getDay(); // Assuming you have a function that returns the current day
+
+function moveElementsForwardIfNeeded() {
+const newKidsArr = [... currentKids];
+  const newDay = getDay(); // Get the new day
+  if (newDay !== currentDay) {
+    
+    const element = newKidsArr.shift(); // Remove the first element from the array
+    newKidsArr.push(element); // Add the removed element to the end of the array
+    currentDay = newDay; // Update the current day to the new day
+    setCurrentKids(newKidsArr);
+    console.log(currentDay)
+}
+}
+
+// Function to get the current day (You can replace this with the appropriate logic to get the current day)
+function getDay() {
+  const now = new Date();
+  return now.getDay();
+}
+
+// Example usage:
+setInterval(moveElementsForwardIfNeeded, 1000); // Check for day change every second (adjust the interval as needed)
     const nameList = currentKids.map(kid => <li key={kid.id}>{kid.name}</li>)
     const [dailyRender , setDailyRender] = useState(true);
     const [dishRender, setDishRender] = useState(false);

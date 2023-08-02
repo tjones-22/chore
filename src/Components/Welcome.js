@@ -1,18 +1,27 @@
+import { useState } from "react";
+
+//import {useGetDay} from "./useGetDay"
 
 const Welcome = () => {
-const time = new Date();
-let dayNum = time.getDate();
-let weekday = time.getDay();
-const daysOfWeek = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday'
-];
 
+//const {dayNum, weekday, daysOfWeek}  = useGetDay();
+const time = new Date();
+    const [dayNum, setDayNum] = useState(time.getDate());
+    const [weekday, setWeekDay] = useState(time.getDay());
+    const daysOfWeek = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+    ];
+    setInterval( () =>{
+        setDayNum(time.getDate());
+        setWeekDay(time.getDay());
+    
+    },1000);
 return (
     <div className='main'>
         <h2>Welcome to the chore site</h2>
