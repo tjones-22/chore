@@ -1,9 +1,9 @@
-const DishChores = () =>{
-    return(
+const DishChores = () => {
+    return (  
         <div>
-            <h1>Dish Chores</h1>
+            <h1>Dish</h1>
         </div>
-    )
+    );
 }
-
+ 
 export default DishChores;

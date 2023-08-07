@@ -1,10 +1,9 @@
-const DailyChores = () =>{
-    
-    return(
+const DailyChores = () => {
+    return ( 
         <div>
-            
+            <h1>Hekllo</h1>
         </div>
-    )
+     );
 }
-
-export default DailyChores
+ 
+export default DailyChores;

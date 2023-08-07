@@ -66,3 +66,37 @@ body{
     border-radius: 10px;
     
 }
+
+
+.current-kids-div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height:auto;
+    
+}
+.buttons-div{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:50%;
+
+}
+.button{
+    padding:5px;
+    background-color:#FFFFFF;
+    font-size: 20px;
+    border-radius:10px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.4s;
+}
+.button:hover{
+    background-color: black;
+    color:white;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
